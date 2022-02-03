@@ -121,6 +121,16 @@ body {
     margin: 0.5em;
   }
 }
+
+/* Line breaks gradient */
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  height: 2px;
+}
 /* Introduction */
 .intro {
   display: flex;
@@ -133,6 +143,7 @@ body {
   margin: auto;
   height: 500px;
   line-height: 1.5;
+  margin-bottom: 4em;
 }
 
 .intro > p {
