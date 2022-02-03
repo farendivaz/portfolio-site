@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --poppins: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--black);
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  font-family: var(--poppins);
+}
+
+.header-name {
+  margin: 2.5em 1em;
+}
+.header-name > a {
+  color: var(--white);
+  text-decoration: none;
+}
+.header-name > a:hover {
+  color: var(--magenta);
+}
+.header-name > .fas {
+  color: var(--aqua);
+}
+.header-name > .fas:hover {
+  color: var(--magenta);
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-items {
+  margin: 1em;
+  font-size: 1.1rem;
+}
+
+.navbar-container > li {
+  list-style: none;
+}
+
+.navbar-items > a {
+  text-decoration: none;
+  color: var(--white);
+}
+.navbar-items > a:hover {
+  text-decoration: none;
+  color: var(--magenta);
+}
+.header > .fas,
+.fab {
+  font-size: 1.5rem;
+  color: var(--aqua);
+}
+.fas,
+.fab:hover {
+  font-size: 1.5rem;
+  color: var(--magenta);
+}
+.btn-resume {
+  background-color: var(--magenta);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+}
+.btn-resume > a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-resume:hover {
+  background-color: var(--hotmag);
+}
+
+@media (max-width: 850px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    margin-bottom: 2em;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    max-width: 80%;
+    margin: auto;
+  }
+  .navbar-items {
+    margin: 0.5em;
+  }
+}
+/* Introduction */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--white);
+  padding: 2em;
+  max-width: 80%;
+  margin: auto;
+  height: 500px;
+  line-height: 1.5;
+}
+
+.intro > p {
+  font-size: 1.1rem;
+}
+.intro > p > span {
+  font-size: 4rem;
+  display: block;
+  color: var(--aqua);
+  font-weight: bold;
+}
+.intro h1 {
+  font-size: 4rem;
+}
+.intro a {
+  color: var(--magenta);
+}
+.intro a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+/* Projects */
