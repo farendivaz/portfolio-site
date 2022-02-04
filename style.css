@@ -240,3 +240,72 @@ body {
   display: flex;
   gap: 1em;
 }
+
+/* Contact Section */
+.plum {
+  background-color: var(--plum);
+  height: 300px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  padding: 3em;
+  color: #fff;
+  gap: 1em;
+  text-align: center;
+}
+.contact h1 {
+  font-size: 2rem;
+}
+
+.contact p {
+  font-size: 1.3rem;
+}
+
+.btn-email {
+  background-color: var(--magenta);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: none;
+  color: var(--white);
+}
+.btn-email:hover {
+  background-color: var(--hotmag);
+}
+
+/* Footer */
+.footer {
+  height: 300px;
+  color: var(--white);
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2em;
+  margin: 1em;
+}
+
+.footer-container .fab,
+.footer-container .fas {
+  font-size: 2.5rem;
+  color: var(--magenta);
+}
